@@ -4,9 +4,9 @@ COPY package.json /app/
 WORKDIR /app
 COPY . ./
 
-ENV NEXT_PUBLIC_APP_URL=https://nextjs-load-test.xpri.dev
+ENV NEXT_PUBLIC_APP_URL="https://nextjs-load-test-a6ottir2fa-uc.a.run.app"
 
 RUN npm install
 RUN npm run build
-EXPOSE 3000
+
 CMD ["npm", "run","start"]
